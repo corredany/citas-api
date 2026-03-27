@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "O8fnuqvYku8=",
+  "dgSpecHash": "GfUpgd9mooU=",
   "success": true,
-  "projectFilePath": "C:\\Users\\USER\\desktop\\tecno\\topicosaplicaciones\\citas-api\\citas-api.csproj",
+  "projectFilePath": "C:\\Users\\USER\\Desktop\\Tecno\\TopicosAplicaciones\\api-net\\citas-api\\citas-api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\USER\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

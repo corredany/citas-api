@@ -4500,11 +4500,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\USER\\desktop\\tecno\\topicosaplicaciones\\citas-api\\citas-api.csproj",
+      "projectUniqueName": "C:\\Users\\USER\\Desktop\\Tecno\\TopicosAplicaciones\\api-net\\citas-api\\citas-api.csproj",
       "projectName": "citas-api",
-      "projectPath": "C:\\Users\\USER\\desktop\\tecno\\topicosaplicaciones\\citas-api\\citas-api.csproj",
+      "projectPath": "C:\\Users\\USER\\Desktop\\Tecno\\TopicosAplicaciones\\api-net\\citas-api\\citas-api.csproj",
       "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\USER\\desktop\\tecno\\topicosaplicaciones\\citas-api\\obj\\",
+      "outputPath": "C:\\Users\\USER\\Desktop\\Tecno\\TopicosAplicaciones\\api-net\\citas-api\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config"

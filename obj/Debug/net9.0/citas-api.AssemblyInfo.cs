@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("citas-api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dcc05c6c7949560379badf5ee853d9754550b20f")]
 [assembly: System.Reflection.AssemblyProductAttribute("citas-api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("citas-api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
