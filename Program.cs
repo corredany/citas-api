@@ -11,6 +11,18 @@ using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
+// CORS
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("Angular", policy =>
+    {
+        policy.WithOrigins("http://localhost:4200")
+              .AllowAnyHeader()
+              .AllowAnyMethod()
+              .AllowCredentials();
+    });
+});
+
 // Controllers con ExceptionFilter
 builder.Services.AddControllers(options =>
 {
@@ -61,6 +73,7 @@ if (app.Environment.IsDevelopment())
     app.MapOpenApi();
 }
 
+app.UseCors("Angular");
 app.UseAuthentication();
 app.UseAuthorization();
 

@@ -306,3 +306,4 @@ C:\Users\USER\Desktop\Tecno\TopicosAplicaciones\api-net\citas-api\obj\Debug\net9
 C:\Users\USER\Desktop\Tecno\TopicosAplicaciones\api-net\citas-api\obj\Debug\net9.0\citas-api.pdb
 C:\Users\USER\Desktop\Tecno\TopicosAplicaciones\api-net\citas-api\obj\Debug\net9.0\citas-api.genruntimeconfig.cache
 C:\Users\USER\Desktop\Tecno\TopicosAplicaciones\api-net\citas-api\obj\Debug\net9.0\ref\citas-api.dll
+C:\Users\USER\Desktop\Tecno\TopicosAplicaciones\api-net\citas-api\obj\Debug\net9.0\citas-api.sourcelink.json
