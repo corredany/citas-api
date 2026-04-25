@@ -50,6 +50,7 @@ builder.Services.AddScoped<ActualizarCitaUseCase>();
 builder.Services.AddScoped<EliminarCitaUseCase>();
 builder.Services.AddScoped<ObtenerClientesUseCase>();
 builder.Services.AddScoped<ObtenerClientePorIdUseCase>();
+builder.Services.AddScoped<CrearClienteUseCase>();
 
 // JWT
 // .NET 9 / Microsoft.IdentityModel 7.x exige >256 bits para HS256, pero el secreto tiene 168 bits.
