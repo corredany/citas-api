@@ -24,19 +24,13 @@ public class CrearCitaUseCase
         var cita = new Cita
         {
             ClienteId = cliente.Id,
-            Fecha = dto.Fecha.Date,
+            Fecha = dto.Fecha.Date == DateTime.MinValue.Date ? DateTime.UtcNow.Date : dto.Fecha.Date,
             Hora = dto.Fecha.TimeOfDay,
             Estado = "pendiente",
             Notas = dto.Descripcion,
             CreadoEn = DateTime.UtcNow,
             ActualizadoEn = DateTime.UtcNow,
         };
-
-        if (!cita.EsFechaFutura())
-            throw new CitaInvalidaException("La fecha no puede ser en el pasado");
-
-        if (!cita.EsDiaValido())
-            throw new CitaInvalidaException("Solo se pueden agendar citas de lunes a viernes");
 
         return await _citaRepository.Crear(cita);
     }
