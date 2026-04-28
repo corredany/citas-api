@@ -3,6 +3,7 @@ namespace CitasApi.Application.Controllers;
 using CitasApi.Application.Logic;
 using CitasApi.Domain.DTOs;
 using Microsoft.AspNetCore.Authorization;
+using System.Linq;
 using Microsoft.AspNetCore.Mvc;
 
 [ApiController]
@@ -56,7 +57,9 @@ public class CitasController : ControllerBase
     [Authorize]
     public async Task<IActionResult> Actualizar(int id, [FromBody] ActualizarCitaDto dto)
     {
-        var cita = await _actualizarCitaUseCase.Execute(id, dto);
+        var rolId = User.Claims.FirstOrDefault(c => c.Type == "rolId")?.Value;
+        var esAdmin = rolId == "1";
+        var cita = await _actualizarCitaUseCase.Execute(id, dto, esAdmin);
         return Ok(cita);
     }
 

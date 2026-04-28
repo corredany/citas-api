@@ -13,14 +13,12 @@ public class ActualizarCitaUseCase
         _citaRepository = citaRepository;
     }
 
-    public async Task<CitaResponseDto> Execute(int id, ActualizarCitaDto dto)
+    public async Task<CitaResponseDto> Execute(int id, ActualizarCitaDto dto, bool esAdmin = false)
     {
-        // 1. Buscar cita
         var cita = await _citaRepository.ObtenerPorId(id);
         if (cita == null) throw new CitaNoEncontradaException(id);
 
-        // 2. Validar estado si se quiere cambiar
-        if (dto.Estado != null)
+        if (!esAdmin && dto.Estado != null)
         {
             if (dto.Estado == "confirmada" && !cita.PuedeConfirmarse())
                 throw new CitaInvalidaException("La cita no puede confirmarse en su estado actual");
@@ -32,7 +30,7 @@ public class ActualizarCitaUseCase
                 throw new CitaInvalidaException("La cita no puede completarse en su estado actual");
         }
 
-        // 3. Actualizar campos
+        // Actualizar campos
         if (dto.Fecha.HasValue) cita.Fecha = dto.Fecha.Value;
         if (dto.Hora.HasValue) cita.Hora = dto.Hora.Value;
         if (dto.Estado != null) cita.Estado = dto.Estado;
